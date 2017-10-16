@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="{{url_for('.static', filename='passengercoolie.css')}}">
+<head>
+  <meta name="keywords" content="coolie,railway,affordable coolie,booking of coolie">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>COOLIE  REGISTER|WELCOME</title>
+</head>
+<body>
+  <header>
+      
+    <div class="container">
+  <h1 id="">COOLIE REGISTER</h1>
+    </div>
+</header>
+    <form action = "{{url_for('coolie')}}" method = "POST">
+    <p>FIRST NAME</p>
+    <input type='text' placeholder='first name' name="cooliefirstname" size="20"></br>
+    <p>MIDDLE NAME</p>
+    <input type='text' placeholder='middle name' name="cooliemiddlename" size="20"></br>
+    <p>LAST NAME</p>
+    <input type='text' placeholder='last name' size="20" name="coolielastname"></br>
+    <p>USER NAME</p>
+    <input type='text' placeholder='user name' size="10" name="coolieusername"></br>
+    <p>MOBILE NUMBER</p>
+    <input type='number' placeholder='mobile' size="10" name="cooliemobile_1"></br>
+    <p>ALTERNATIVE MOBILE NUMBER</p>
+    <input type='number' placeholder='mobile' size="10" name="cooliemobile_2"></br>
+    <p>BATCH NUMBER</p>
+    <input type='number' placeholder='batch number' size="20" name="cooliebatch_no"></br>
+    <p>STREET</p>
+    <input type='text' placeholder='street' size="25" name="cooliestreet"></br> 
+    <p>CITY</p>
+    <input type='text' placeholder='city' size="15" name="cooliecity"></br>
+    <p>STATE</p>
+    <input type='text' placeholder='state' size="20" name="cooliestate"></br>
+    <p>COUNTRY</p>
+    <input type='text' placeholder='country' size="20" name="cooliecountry"></br>
+    <p>PIN NUMBER</p>
+    <input type='number' placeholder='pin' size="6" name="cooliepin"></br>
+    <p>AADHAR NUMBER</p>
+    <input type='number' placeholder='aadhar' size="20" name="coolieaadhar_no"></br>
+    <p>FAMILY MEMBER CONTACT NUMBER</p>
+    <input type='text' placeholder='contact number' size="10" name="cooliefmcontact_no"></br>
+    <p>PASSWORD</p>
+    <input type='text' placeholder='password' size="20" name="cooliepassw"></br>
+    </br>
+    </br>
+    </br>
+    <input type = "submit" value = "REGISTER" />
+  </form>
+    <footer>
+    <p class="copyright pull-right">
+                   All copyrights &copy; <script>document.write(new Date().getFullYear())</script> are reserved under Know Your Coolie.
+                </p>
+</footer>
+</body>
+</html>
