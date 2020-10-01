@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="{{url_for('.static', filename='passengercoolie.css')}}">
+<head>
+  <meta name="keywords" content="coolie,railway,affordable coolie,booking of coolie">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PASSENGER  REGISTER|WELCOME</title>
+</head>
+<body>
+  <header>
+      
+    <div class="container">
+  <h1 id="">PASSENGER REGISTER</h1>
+    </div>
+</header>
+    <form action = "{{url_for('passe')}}" method = "POST">
+        <p><b>FIRST NAME</b></p>
+    <input type='text' placeholder='first name' name = "passfname" size="20">
+</br>
+</br>
+<p><b>MIDDLE NAME</b></p>
+    <input type='text' placeholder='middle name' name = "passmname" size="20">
+</br>
+</br>
+<p><b>LAST NAME</b></p>
+    <input type='text' placeholder='last name' name = "passlname" size="20">
+</br>
+</br>
+<p><b>MOBILE NUMBER</b></p>
+    <input type='number' placeholder='mobile' name = "passmobile" size="10">
+    </br>
+    </br>
+   <p><b>EMAIL</b></p>
+    <input type='text' placeholder='email' size="25" name = "passemail">
+    </br>
+    </br> 
+    <p><b>USER NAME</b></p>
+    <input type='text' placeholder='user name' size="15" name = "passusername">
+    </br>
+    </br>
+    <p><b>PASSWORD</b></p>
+    <input type='text' placeholder='password' size="20" name = "passpassword">
+    </br>
+    </br>
+    </br>
+</br>
+ <input type = "submit" value = "REGISTER" /><br>
+  </form>
+    <footer>
+    <p class="copyright pull-right">
+                   All copyrights &copy; <script>document.write(new Date().getFullYear())</script> are reserved under Know Your Coolie.
+                </p>
+</footer>
+</body>
+</html>

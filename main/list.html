@@ -1,0 +1,30 @@
+<html>
+<body>
+<H1>Print Entire Data</H1>
+<form action = "{{ url_for('printlist') }}">
+<input type = "submit" value = "submit" /><br>
+</form>
+
+<table border = 1>
+         <thead>COOLIE
+            <td>Firstname</td>
+            <td>Middlename</td>
+            <td>Lastname</td>
+            <td>phone1</td>
+            <td>phone2</td>
+            <td>Batch number</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["firstname"]}}</td>
+               <td>{{row["middlename"]}}</td>
+               <td>{{row["lastname"]}}</td>
+               <td>{{row["mobile_1"]}}</td>
+               <td>{{row["mobile_2"]}}</td>
+               <td> {{ row["batch_no"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+</body>
+</html>
